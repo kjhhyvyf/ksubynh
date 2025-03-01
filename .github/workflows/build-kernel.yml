@@ -23,7 +23,7 @@ jobs:
       CCACHE_HARDLINK: "true"
     steps:
     - name: Check out
-      uses: actions/starter-workflows@main
+      uses: actions/checkout@v3
       
     - name: Read the configuration
       run: |
