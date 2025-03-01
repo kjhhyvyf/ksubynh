@@ -88,7 +88,7 @@ jobs:
       run: |
         cd $GITHUB_WORKSPACE/kernel_workspace
         mkdir clang
-        wget https://android.googlesource.com/platform/prebuilts/clang/host/${{ env.AOSP_CLANG_SYSTEM }}/+archive/refs/heads/${{ env.AOSP_CLANG_BRANCH }}/clang-${{ env.AOSP_CLANG_VERSION }}.tar.gz
+        wget https://android.googlesource.com/platform/prebuilts/clang/host/${{ env.AOSP_CLANG_SYSTEM }}/+archive/${{ env.AOSP_CLANG_BRANCH }}/clang-${{ env.AOSP_CLANG_VERSION }}.tar.gz
         tar -C clang/ -zxvf clang-${{ env.AOSP_CLANG_VERSION }}.tar.gz
         rm -rf clang-${{ env.AOSP_CLANG_VERSION }}.tar.gz
 
