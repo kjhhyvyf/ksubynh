@@ -22,8 +22,8 @@ jobs:
       CCACHE_NOHASHDIR: "true"
       CCACHE_HARDLINK: "true"
     steps:
-    - name: Check out
-      uses: actions/checkout@v3
+    - name: Prepare Configuration
+      uses: actions/checkout@v4
       
     - name: Read the configuration
       run: |
