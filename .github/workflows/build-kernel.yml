@@ -23,7 +23,7 @@ jobs:
       CCACHE_HARDLINK: "true"
     steps:
     - name: Check out
-      uses: actions/upload-artifact
+      uses: actions/checkout@v4
       
     - name: Read the configuration
       run: |
