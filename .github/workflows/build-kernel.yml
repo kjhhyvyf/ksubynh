@@ -23,8 +23,8 @@ jobs:
       CCACHE_HARDLINK: "true"
     steps:
     - name: Check out
-      uses: actions/checkout@v3
-
+      uses: actions/upload-artifact
+      
     - name: Read the configuration
       run: |
         CONFIG_ENV=config.properties
